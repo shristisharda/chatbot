@@ -1,0 +1,23 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "chat with me",
+  "license": "ISC",
+  "author": "😁",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^4.0.82",
+    "@tailwindcss/postcss": "^4.3.3",
+    "ai": "^7.0.116",
+    "body-parser": "^2.3.0",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3"
+  }
+}
