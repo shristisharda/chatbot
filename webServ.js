@@ -48,7 +48,7 @@ io.on('connection', (socket) => {
 
 app.use(bodyParser.json());
 
-app.use(express.static('public'));
+app.use(express.static('public')); // public folder files can be used by browser now
 
 app.get('/chat', (req, res) => { // browser sends req to /chat
   console.log("process.cwd()", process.cwd())
@@ -56,8 +56,6 @@ app.get('/chat', (req, res) => { // browser sends req to /chat
   res.sendFile(process.cwd() + '/views/chat.html');
 
 });
-
-app.use(express.static('public')); // public folder files can be used by browser now
 
 server.listen(3000, () => { // server starts
   console.log('Server runnningg at http://localhost:3000');

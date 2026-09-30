@@ -22,16 +22,31 @@
     <div class="container-fluid chat-container">
 
         <!-- Header -->
-        <header class="chat-header text-center p-3">
+        <header class="chat-header p-3">
+
             <h1 class="mb-0">My Chatbot</h1>
+            <button id="newChatBtn" class="btn btn-primary">
+                ↻ &nbsp; Start New Chat
+            </button>
+
         </header>
 
 
         <!-- Messages -->
         <main id="chatList">
-            
+            <div id="chatMessages"></div>
         </main>
 
+        <div id="chatEndOverlay" class="chat-end-overlay">
+
+            <div class="chat-end-content">
+                <img src="/robot.png" alt="Chat ended" class="chat-end-robot">
+                <h1>Conversation Ended</h1>
+                <p>Thanks for chatting! 👋</p>
+                <p>Click the button on the top right to start a new chat.</p>
+            </div>
+
+        </div>
 
         <!-- MessageInput -->
         <form id="chatForm" class="d-flex gap-2 p-3 border-top">
